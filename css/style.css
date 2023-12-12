@@ -1,0 +1,39 @@
+.centered {
+    margin: 0 auto;
+}
+.logo {
+    max-width: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 20px;
+}
+.menu a {
+text-decoration: none;
+color: #515151;
+}
+.menu a:hover {
+    background-color: #212529;
+    color: #fff;
+}
+.balance {
+    color: #e71d1c;
+}
+
+/* Table */
+tr {
+    border: 1px #fff solid;
+}
+
+.txt-green {
+    color: #52c40b !important;
+}
+.txt-red {
+    color: #e71d1c !important;
+}
+

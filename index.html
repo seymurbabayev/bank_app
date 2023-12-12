@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bank App</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header class="d-flex justify-content-between flex-wrap flex-lg-nowrap align-items-center p-5">
+            <a class="mb-5 mb-lg-0" href="index.html"><img class="logo" src="logo.png" alt="" /></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">HSBC Premier & Advance</a></li>
+                    <li><a href="">Daily Banking</a></li>
+                    <li><a href="">Credit Cards & Loans</a></li>
+                    <li><a href="">Investment Products</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container p-5">
+            <input id="inputEl" class="form-control form-control-lg" type="number" focus />
+            
+            <div class="d-flex justify-content-center">
+                <div class="btn-group btn-group-lg p-5 mx-auto" role="group" aria-label="Large button group">
+                    <button id="topupBtn" type="button" class="btn btn-outline-dark">Top Up</button>
+                    <button id="payBtn" type="button" class="btn btn-outline-dark">Pay</button>
+                    <button id="updateBtn" type="button" class="btn btn-outline-dark">Update history</button>
+                </div>
+            </div>
+
+            <h2 class="text-center balance mb-5">Current balance: <span id="balanceEl">0</span> ₼</h2>
+            <table id="history_table" class="table table-dark">
+                <thead>
+                    <tr class="fw-bold">
+                        <th>№</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Cashback</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTable">
+                    
+                </tbody>
+            </table>
+        </main>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>
